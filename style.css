@@ -68,3 +68,11 @@ main {
 form .input-group-addon:after {
     content: ": ";
 }
+
+#status-alert p {
+    display: none;
+}
+
+#status-alert p.active {
+    display: block;
+}

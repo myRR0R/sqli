@@ -13,6 +13,10 @@ get '/square_equation.js' do
   send_file 'square_equation.js'
 end
 
+get '/index.js' do 
+  send_file 'index.js'
+end
+
 get '/style.css' do
   send_file 'style.css'
 end
