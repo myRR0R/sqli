@@ -1,0 +1,40 @@
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div align="center" class="panel-heading"><h2>Quadratic equation solution</h2></div>
+        <div align="center" class="panel-body">
+          <h3 align="center">ax&sup2; + bx + c = 0</h3>
+        
+
+        <div><span id="square_sol_s">Enter the odds and click "Count"</span></div>
+        <div>Discr = <div class="answer" id="discr"></div></div>
+        <div>x1 = <div class="answer" id="x1"></div></div>
+        <div>x2 = <div class="answer" id="x2"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div align="center" class="panel-heading"><h2>Linear equation solution</h2></div>
+      <div align="center" class="panel-body">
+        <h3 align="center" class="lin">ax + b = 0</h3>
+        <span id="square_sol_l">Enter the odds and click "Count"</span>
+        <form name="linear" action="javascript:linear_equation()">
+          <ul align="left">
+            <li><p>a: <input class="input" name="linear_g" type="text" value="" size="4"></p></li>
+            <li><p>b: <input class="input" name="linear_h" type="text" value="" size="4"></p></li>
+          </ul>
+          <input class="submit" type="submit" value="Count">
+        </form>
+        <div>x = <div class="answer" id="x"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="border">
+  <div class="container">
+    <h4 align="left">ZALUPA KITA INCORPORATED</h4>
+  </div>
+</div>
