@@ -1,2 +1,5 @@
 # Node environment
 node_modules/
+
+# Generated files:
+index.es5.js

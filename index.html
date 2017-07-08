@@ -8,7 +8,6 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Optional theme -->
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
   <link href="style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
@@ -18,7 +17,7 @@
       <h3 class="page-header">Lorem ipsum <small>count this shit then anybody else</small></h3>
       <div class="row">
         <div class="col-md-6">
-          <form name="square" action="javascript:void(0)" class="thumbnail">
+          <form name="square" action="javascript:void(0)" class="thumbnail" id="count-form">
             <fieldset data-form-view="square">
               <legend>Square:</legend>
               <ul class="list-group">
@@ -88,20 +87,26 @@
               <div class="caption">
                 <h4>Result:</h4>
               </div>
-              <p class="alert alert-success" role="alert"></p>
-              <p class="alert alert-info active" role="alert">Please, fill the inputs...</p>
-              <p class="alert alert-warning" role="alert"></p>
-              <p class="alert alert-danger" role="alert"></p>
+              <p class="alert alert-success" role="alert" data-template="{
+                linear: \"Linear\",
+                square: \"Square\"}"></p>
+              <p class="alert alert-info active" role="alert" data-template="">Please, fill the inputs...</p>
+              <p class="alert alert-warning" role="alert" data-template=""></p>
+              <p class="alert alert-danger" role="alert" data-template=""></p>
             </div>
         </div>
       </div> <!-- row -->
     </main>
 
+    <!-- #TODO Cut into dependencies -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="/square_equation.js"></script>
-    <script src="/linear_equation.js"></script>
-    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.14/system-production.js"></script>
+    <script>
+      System.config({ "baseURL": "./" });
+      System.import("index.es5.js");
+    </script>
+    <script src="index.es5.js"></script>
   </body>
 </html>
 
