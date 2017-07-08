@@ -1,6 +1,0 @@
-1. Install Sinatra from http://www.sinatrarb.com/
-gem install sinatra
-
-2. Run it 
-ruby main.rb
-http://localhost:4567/
