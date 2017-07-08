@@ -1,0 +1,28 @@
+{
+  "name": "test-bepaid",
+  "description": "Test task for BePaid by E.Muravitsiy",
+  "homepage": "https://github.com/myRR0R/sqli#readme",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myRR0R/sqli.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "6.6.5",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "6.7.2"
+  },
+  "author": "Eugen Muravitskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myRR0R/sqli/issues"
+  },
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+}
